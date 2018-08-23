@@ -1,0 +1,4 @@
+Os comandos keytool devem ser executados na basta "bin"
+dentro da sua instalação do Java
+
+Comandos keytool: https://pastebin.com/a7fY75tU
