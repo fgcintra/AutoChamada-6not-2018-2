@@ -13,11 +13,15 @@ export class HomePage {
 
   }
 
+  public error : any;
+
   googleLogin() {
     this.auth.googleLogin().then(
       // Agora temos o perfil do usuário em this.auth.userProfile
     ).catch(
-      // Deu erro
+      function(erro) {
+        this.error = erro;
+      }
     );
   }
 
