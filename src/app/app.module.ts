@@ -13,6 +13,12 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { AuthProvider } from '../providers/auth/auth';
 import { GooglePlus } from '@ionic-native/google-plus';
 
+import { environment } from '../environments/environment';
+
+import { AngularFireModule } from 'angularfire2';
+export const firebaseConfig = environment.firebaseConfig;
+import { AngularFirestoreModule } from 'angularfire2/firestore';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -23,7 +29,9 @@ import { GooglePlus } from '@ionic-native/google-plus';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFirestoreModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
