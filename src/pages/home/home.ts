@@ -14,9 +14,10 @@ export class HomePage {
   }
 
   public error : any;
+  public log: String = '';
 
   googleLogin() {
-    this.auth.googleLogin().then(
+    this.auth.googleLogin(this.log).then(
       // Agora temos o perfil do usuário em this.auth.userProfile
     ).catch(
       function(erro) {

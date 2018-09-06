@@ -27,7 +27,7 @@ export class AuthProvider {
     });
   }
 
-  googleLogin(): Promise<any> {
+  googleLogin(log : String): Promise<any> {
     return new Promise((resolve, reject) => {
       this.googlePlus.login({
         'webClientId': '739673900424-jr62bnsmvk0kgnqef1t0hq0oq7fsfc7u.apps.googleusercontent.com',
@@ -37,12 +37,12 @@ export class AuthProvider {
           const googleCredential = firebase.auth.GoogleAuthProvider.credential(res.idToken);
 
           firebase.auth().signInWithCredential(googleCredential).then(response => {
-            console.log("Firebase success: " + JSON.stringify(response));
+           log += "Firebase success: " + JSON.stringify(response);
             resolve(response)
           });
         }, 
         err => {
-          console.error("Error: ", err)
+         log += "Error: ", err;
           reject(err);
         });
     });
