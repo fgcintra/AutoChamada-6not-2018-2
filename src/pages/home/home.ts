@@ -23,7 +23,7 @@ export class HomePage {
       }
     ).catch(
       function(erro) {
-        page.log = 'ERRO: ' + JSON.stringify(erro);
+        page.log += 'ERRO: ' + JSON.stringify(erro);
       }
     );
   }
