@@ -84,5 +84,6 @@
     <plugin name="cordova-plugin-googleplus" spec="^5.3.0">
         <variable name="REVERSED_CLIENT_ID" value="com.googleusercontent.apps.739673900424-00ur0rf86011067688n6r7cinnbe3dle" />
     </plugin>
+    <plugin name="cordova-plugin-firebase" spec="^1.1.3" />
     <engine name="android" spec="7.0.0" />
 </widget>
