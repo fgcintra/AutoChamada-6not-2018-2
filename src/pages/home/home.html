@@ -35,10 +35,6 @@
     <h3>{{ auth.userProfile.email }}</h3>
   </ion-item>
 
-  <ion-item *ngIf="error">
-    {{ error }}
-  </ion-item>
-
   <!-- Sign Out -->
   <button ion-button round full color="danger" (click)="signOut()" *ngIf="auth.userProfile">
 
