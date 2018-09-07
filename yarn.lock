@@ -17,11 +17,11 @@
   dependencies:
     tslib "^1.9.0"
 
-"@angular/common@6.1.7":
-  version "6.1.7"
-  resolved "https://registry.yarnpkg.com/@angular/common/-/common-6.1.7.tgz#b94ae9f1c71b1223a305942f09aabf818f5ed2e9"
+"@angular/common@5":
+  version "5.2.11"
+  resolved "https://registry.yarnpkg.com/@angular/common/-/common-5.2.11.tgz#ee7520b02510a2868f30b1f91897102d48324edf"
   dependencies:
-    tslib "^1.9.0"
+    tslib "^1.7.1"
 
 "@angular/compiler-cli@6.1.7":
   version "6.1.7"
@@ -38,17 +38,17 @@
   dependencies:
     tslib "^1.9.0"
 
-"@angular/core@6.1.7":
-  version "6.1.7"
-  resolved "https://registry.yarnpkg.com/@angular/core/-/core-6.1.7.tgz#036088227cbff7d3fc7af0c43c5af9db46149f16"
+"@angular/core@5":
+  version "5.2.11"
+  resolved "https://registry.yarnpkg.com/@angular/core/-/core-5.2.11.tgz#0e38fdf4fa038a3c168c72952682f2ee3721f1a3"
   dependencies:
-    tslib "^1.9.0"
+    tslib "^1.7.1"
 
-"@angular/forms@6.1.7":
-  version "6.1.7"
-  resolved "https://registry.yarnpkg.com/@angular/forms/-/forms-6.1.7.tgz#42484c2ab1079fd34ddd637eb143db6a17be4990"
+"@angular/forms@5":
+  version "5.2.11"
+  resolved "https://registry.yarnpkg.com/@angular/forms/-/forms-5.2.11.tgz#712534fa317e194caa452d0c1a8efc72f5e040d6"
   dependencies:
-    tslib "^1.9.0"
+    tslib "^1.7.1"
 
 "@angular/http@6.1.7":
   version "6.1.7"
@@ -62,11 +62,11 @@
   dependencies:
     tslib "^1.9.0"
 
-"@angular/platform-browser@6.1.7":
-  version "6.1.7"
-  resolved "https://registry.yarnpkg.com/@angular/platform-browser/-/platform-browser-6.1.7.tgz#21da4fbe6f407320ee50cdf9ab0b69b2e10eca50"
+"@angular/platform-browser@5":
+  version "5.2.11"
+  resolved "https://registry.yarnpkg.com/@angular/platform-browser/-/platform-browser-5.2.11.tgz#5be379f96d74b4ebe84a447633ed5279cb7e641e"
   dependencies:
-    tslib "^1.9.0"
+    tslib "^1.7.1"
 
 "@firebase/app-types@0.3.2":
   version "0.3.2"
@@ -178,7 +178,7 @@
   version "0.2.8"
   resolved "https://registry.yarnpkg.com/@firebase/webchannel-wrapper/-/webchannel-wrapper-0.2.8.tgz#38a936b60b898a1ad0f3719543ff1a1031f60f8b"
 
-"@ionic-native/core@~4.12.2":
+"@ionic-native/core@^4.12.2":
   version "4.12.2"
   resolved "https://registry.yarnpkg.com/@ionic-native/core/-/core-4.12.2.tgz#80ffab6cc5470c56ade0743b72af9e7af398cfb5"
 
@@ -3512,7 +3512,7 @@ rollup@0.50.0:
   version "0.50.0"
   resolved "https://registry.yarnpkg.com/rollup/-/rollup-0.50.0.tgz#4c158f4e780e6cb33ff0dbfc184a52cc58cd5f3b"
 
-rxjs@^5.5.11:
+rxjs@5:
   version "5.5.12"
   resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-5.5.12.tgz#6fa61b8a77c3d793dbaf270bee2f43f652d741cc"
   dependencies:
