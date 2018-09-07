@@ -13,17 +13,17 @@ export class HomePage {
 
   }
 
-  public log: String = '';
+  public logger: any = {content: ''};
 
   googleLogin() {
     let page = this;
-    this.auth.googleLogin(page.log).then(
+    this.auth.googleLogin(page.logger).then(
       function(res) {
-        page.log += 'RESPOSTA: ' + JSON.stringify(res);
+        page.logger.content += 'RESPOSTA: ' + JSON.stringify(res);
       }
     ).catch(
       function(erro) {
-        page.log += 'ERRO: ' + JSON.stringify(erro);
+        page.logger.content += 'ERRO: ' + JSON.stringify(erro);
       }
     );
   }
