@@ -42,7 +42,7 @@ export class AuthProvider {
           });
         }, 
         err => {
-         log += "Error: ", err;
+         log += "Error: " + err;
           reject(err);
         });
     });
