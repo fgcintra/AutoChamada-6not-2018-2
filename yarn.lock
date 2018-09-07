@@ -238,6 +238,12 @@
     localforage-cordovasqlitedriver "1.7.0"
     tslib "^1.7.1"
 
+"@types/cordova-plugin-file-transfer@^1.6.2":
+  version "1.6.2"
+  resolved "https://registry.yarnpkg.com/@types/cordova-plugin-file-transfer/-/cordova-plugin-file-transfer-1.6.2.tgz#fd87d3f91781a1519dab8b87723d756eefdda998"
+  dependencies:
+    cordova-plugin-file-transfer "*"
+
 abbrev@1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/abbrev/-/abbrev-1.1.1.tgz#f8f2c887ad10bf67f634f005b6987fed3179aac8"
@@ -489,7 +495,7 @@ base64-js@1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/base64-js/-/base64-js-1.2.0.tgz#a39992d723584811982be5e290bb6a53d86700f1"
 
-base64-js@^1.0.2:
+base64-js@^1.0.2, base64-js@^1.2.3:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/base64-js/-/base64-js-1.3.0.tgz#cab1e6118f051095e58b5281aea8c1cd22bfc0e3"
 
@@ -991,6 +997,10 @@ cordova-plugin-device@^2.0.2:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/cordova-plugin-device/-/cordova-plugin-device-2.0.2.tgz#fc08f3722e67eef7b6c67bfc99a83df6add0baba"
 
+cordova-plugin-file-transfer@*:
+  version "1.7.1"
+  resolved "https://registry.yarnpkg.com/cordova-plugin-file-transfer/-/cordova-plugin-file-transfer-1.7.1.tgz#a75d8be2ebc3bb9b23c5b1bbd199214ec267586b"
+
 cordova-plugin-googleplus@^5.3.1:
   version "5.3.1"
   resolved "https://registry.yarnpkg.com/cordova-plugin-googleplus/-/cordova-plugin-googleplus-5.3.1.tgz#fcea9e06b838c7e481c2692232382389d34f4204"
@@ -1002,6 +1012,16 @@ cordova-plugin-ionic-keyboard@^2.1.2:
 cordova-plugin-ionic-webview@^2.1.3:
   version "2.1.3"
   resolved "https://registry.yarnpkg.com/cordova-plugin-ionic-webview/-/cordova-plugin-ionic-webview-2.1.3.tgz#4df8dde4d008dba4b9848e3b2c58a5228a6f5a00"
+
+cordova-plugin-ionic@^5.0.0:
+  version "5.1.4"
+  resolved "https://registry.yarnpkg.com/cordova-plugin-ionic/-/cordova-plugin-ionic-5.1.4.tgz#f0385a728bb02322d8b6d44e45411dd8ff566a56"
+  dependencies:
+    "@types/cordova-plugin-file-transfer" "^1.6.2"
+    mkpath ">=1.0.0"
+    node-version-compare ">=1.0.1"
+    plist ">=1.2.0"
+    xml2js ">=0.4"
 
 cordova-plugin-splashscreen@^5.0.2:
   version "5.0.2"
@@ -2639,6 +2659,10 @@ mixin-deep@^1.2.0:
   dependencies:
     minimist "0.0.8"
 
+mkpath@>=1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/mkpath/-/mkpath-1.0.0.tgz#ebb3a977e7af1c683ae6fda12b545a6ba6c5853d"
+
 ms@2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.0.0.tgz#5608aeadfc00be6c2901df5f9861788de0d597c8"
@@ -2779,6 +2803,10 @@ node-sass@4.9.0:
     sass-graph "^2.2.4"
     stdout-stream "^1.4.0"
     "true-case-path" "^1.0.2"
+
+node-version-compare@>=1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/node-version-compare/-/node-version-compare-1.0.1.tgz#d85bfd20f0acade33577f56682c7109c34c550cd"
 
 "nopt@2 || 3":
   version "3.0.6"
@@ -3092,6 +3120,14 @@ plist@2.1.0, plist@^2.1.0:
   dependencies:
     base64-js "1.2.0"
     xmlbuilder "8.2.2"
+    xmldom "0.1.x"
+
+plist@>=1.2.0:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/plist/-/plist-3.0.1.tgz#a9b931d17c304e8912ef0ba3bdd6182baf2e1f8c"
+  dependencies:
+    base64-js "^1.2.3"
+    xmlbuilder "^9.0.7"
     xmldom "0.1.x"
 
 posix-character-classes@^0.1.0:
@@ -3476,11 +3512,11 @@ rollup@0.50.0:
   version "0.50.0"
   resolved "https://registry.yarnpkg.com/rollup/-/rollup-0.50.0.tgz#4c158f4e780e6cb33ff0dbfc184a52cc58cd5f3b"
 
-rxjs@^6.3.2:
-  version "6.3.2"
-  resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-6.3.2.tgz#6a688b16c4e6e980e62ea805ec30648e1c60907f"
+rxjs@^5.5.11:
+  version "5.5.12"
+  resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-5.5.12.tgz#6fa61b8a77c3d793dbaf270bee2f43f652d741cc"
   dependencies:
-    tslib "^1.9.0"
+    symbol-observable "1.0.1"
 
 safe-buffer@5.1.1:
   version "5.1.1"
@@ -3879,6 +3915,10 @@ sw-toolbox@3.6.0:
     path-to-regexp "^1.0.1"
     serviceworker-cache-polyfill "^4.0.0"
 
+symbol-observable@1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/symbol-observable/-/symbol-observable-1.0.1.tgz#8340fc4702c3122df5d22288f88283f513d3fdd4"
+
 tapable@^0.2.7:
   version "0.2.8"
   resolved "https://registry.yarnpkg.com/tapable/-/tapable-0.2.8.tgz#99372a5c999bf2df160afc0d74bed4f47948cd22"
@@ -4047,9 +4087,9 @@ type-is@~1.6.15, type-is@~1.6.16:
     media-typer "0.3.0"
     mime-types "~2.1.18"
 
-typescript@^3.0.3:
-  version "3.0.3"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.0.3.tgz#4853b3e275ecdaa27f78fda46dc273a7eb7fc1c8"
+typescript@2.7.2:
+  version "2.7.2"
+  resolved "http://registry.npmjs.org/typescript/-/typescript-2.7.2.tgz#2d615a1ef4aee4f574425cdff7026edf81919836"
 
 typescript@~2.6.1:
   version "2.6.2"
@@ -4305,7 +4345,7 @@ ws@3.3.2:
     safe-buffer "~5.1.0"
     ultron "~1.1.0"
 
-xml2js@^0.4.19:
+xml2js@>=0.4, xml2js@^0.4.19:
   version "0.4.19"
   resolved "https://registry.yarnpkg.com/xml2js/-/xml2js-0.4.19.tgz#686c20f213209e94abf0d1bcf1efaa291c7827a7"
   dependencies:
@@ -4316,7 +4356,7 @@ xmlbuilder@8.2.2:
   version "8.2.2"
   resolved "https://registry.yarnpkg.com/xmlbuilder/-/xmlbuilder-8.2.2.tgz#69248673410b4ba42e1a6136551d2922335aa773"
 
-xmlbuilder@~9.0.1:
+xmlbuilder@^9.0.7, xmlbuilder@~9.0.1:
   version "9.0.7"
   resolved "https://registry.yarnpkg.com/xmlbuilder/-/xmlbuilder-9.0.7.tgz#132ee63d2ec5565c557e20f4c22df9aca686b10d"
 
